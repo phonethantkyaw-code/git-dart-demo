@@ -22,6 +22,11 @@ void main() {
       case 1:
         break;
       case 2:
+        int total = 0;
+        for (var expense in expenses) {
+          total += expense['paid'] as int;
+        }
+        print('Total paid: $total');
         break;
       default:
         print('Invalid input');
